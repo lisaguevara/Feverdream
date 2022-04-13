@@ -1,0 +1,443 @@
+@charset "utf-8";
+@font-face {
+	font-family: Lato;
+	src: url(../resources/Lato-Regular.ttf) format('truetype');
+}
+
+/*
+	Feverdream Collective Styles Stylesheet
+
+	Author: Lisa Guevara
+	Date: 2021-03-25
+	
+	Filename: FD_styles.css
+*/
+
+/*===============
+ * Reset Styles
+ * ==============
+ */
+
+html, body, h1, h2, h3, p, section, a, header, footer, nav, div,
+ul, ol, li, em {
+	padding: 0px;
+	margin: 0px;
+	text-decoration: none;
+	box-sizing: border-box;
+	list-style-type: none;
+}
+
+/*=================================================
+ * General Layout and Styles for all screen widths
+ *=================================================
+ */
+html {
+	font-size: 16px;
+	background-color: rgb(64, 64, 64);
+}
+body {
+	padding:10px;
+	background-color: rgb(253, 228, 217);
+	color: black;
+	width: 87%;
+	margin-left: auto;
+	margin-right:auto;
+	box-shadow: 35px 0px 65px rgb(204 31 222), -35px 0px 65px rgb(204 31 222);
+}
+
+nav ul {
+	display: flex;
+	margin-bottom: 10px;
+	width: 100%;
+}
+nav li {
+	display:inline-block;
+	background-color: rgb(16, 122, 38);
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	text-align: center;
+	padding: 5px;
+	margin: 3px auto;
+	width: 18%;
+}
+nav a {
+	color: rgb(253, 228, 217);
+	font-family: Lato;
+	font-size: 1.2rem;
+	text-decoration: none;
+	display:inline-block;
+	width: 100%;
+}
+nav li:hover {
+	background-color:rgba(16, 122, 38, 0.7);
+}
+nav a:hover {
+	color:rgb(253, 228, 217);
+}
+div.banner-imgLeft, div.banner-imgRight {
+	display: inline-block;
+	height: 45vh;
+	margin: 0 auto;
+	width: 50%;
+}
+div.banner-imgLeft {
+	background: rgb(139, 209, 240) url(../images/FD-2018_6.jpg) top center/cover no-repeat scroll;
+	float:left;
+}
+div.past {
+	background: rgb(139, 209, 240) url(../images/FD-2017_1.jpg) top center/cover no-repeat scroll;
+}
+div.about {
+	background: rgb(139, 209, 240) url(../images/FD-2019_1.jpg) top center/cover no-repeat scroll;
+}
+div.upcoming {
+	background: rgb(139, 209, 240) url(../images/FD-2018_2.jpg) top center/cover no-repeat scroll;
+}
+div.contact {
+	background: rgb(139, 209, 240) url(../images/FD-2019_6.jpg) top center/cover no-repeat scroll;
+}
+div.banner-imgRight {
+	background: rgb(139, 209, 240) url(../images/FD-2018_1.jpg) top center/cover no-repeat scroll;
+}
+div.banner-textLeft, div.banner-textRight {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	height: 45vh;
+	padding: 5px;
+	margin: 0 auto;
+	background-color: rgb(138, 209, 240);
+	color: black;
+	text-align: center;
+}
+div.banner-textLeft {
+	float:left;
+}
+div.banner-textLeft h2, div.banner-textRight h2 {
+	margin-top: auto;
+}
+h1 {
+	margin: 0 auto;
+	padding: 15px;
+	text-align: center;
+	font-size: 2.1rem;
+	font-family: Georgia;
+	color: rgb(64, 64, 64);
+}
+h2 {
+	padding: 8px;
+	font-family: Lato;
+	font-size: 1.4rem;
+}
+section {
+	clear:both;
+}
+section p {
+	margin: 10px;
+	padding: 10px;
+	font-family: Georgia;
+	font-size: 1rem;
+}
+section#members h2:first-child, h2.eventYear {
+	width:100%;
+	background-color: rgb(16, 122, 38);
+	color: rgb(253, 228, 217);
+	text-align: center;
+}
+section#members ul#memberList, ul#pastList {
+	padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
+section#members li {
+    font-size: 1.3rem;
+    flex-basis: 150px;
+}
+section#members img {
+	width: 100%;
+	border: 10px solid rgb(138, 209, 240);
+	box-sizing: border-box;
+}
+section#members figure {
+	display: inline-block;
+	margin: 0;
+}
+section#members figure:nth-of-type(even) {
+	width:35%;
+	float:right;
+}
+section#members figure:nth-of-type(odd) {
+	width:35%;
+	float:left;
+}
+section#members h2.memberName:nth-of-type(even) {
+    width: 65%;
+	margin-bottom: 10px;
+    float: right;
+    text-align: center;
+    background-color: rgb(138, 209, 240);
+}
+section#members h2.memberName:nth-of-type(odd) {
+    width: 65%;
+	margin-bottom: 10px;
+    float: left;
+    text-align: center;
+    background-color: rgb(138, 209, 240);
+}
+section#members p.BackToTop {
+	clear:both;
+}
+aside {
+	background-color: rgb(138, 209, 240);
+	margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+	align-items: center;
+}
+aside img {
+	width: 45%;
+	height: auto;
+	flex-basis: 250px;
+    flex-grow: .4;
+}
+ul#pastList li {
+	font-size: 1.3rem;
+	flex-basis: 0px;
+}
+a {
+	color: rgb(16, 122, 38);
+	text-decoration: underline;
+}
+a:hover {
+	color: rgb(204, 31, 222);
+}
+table {
+	width:100%;
+	border: 2px solid rgb(138, 209, 240);
+	border-collapse: collapse;
+	margin-bottom: 20px;
+}
+thead {
+	line-height: 30px;
+	background-color: rgb(138, 209, 240);
+}
+colgroup {
+	border: 1px solid black;
+}
+col#description {
+	width: 40%;
+}
+col#example {
+	width: 35%;
+}
+col#lesson {
+	width:20%;
+	background-color: rgba(138, 209, 240, 0.6);
+}
+td, tr, th {
+	padding:5px;
+	border: 2px solid rgb(16 122 38);
+}
+form#contact {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+	margin-bottom: 20px;
+}
+input#subject, label {
+    display: block;
+	width:60%;
+	margin:5px 5px 5px 0px;
+}
+input {
+	width:45%;
+}
+textarea {
+	width:60%;
+	height:100px;
+}
+input[type='submit'] {
+	display: block;
+	padding:5px;
+	margin: 5px 0 5px 0;
+	font-size: 1rem;
+	width:25%;
+	background-color: rgb(138, 209, 240);
+}
+footer{
+	clear:both;
+	padding: 20px;
+	margin: 0 auto;
+	width:100%;
+	background-color: rgb(16, 122, 38);
+	color: rgb(253, 228, 217);
+	text-align: center;
+	font-family: Lato;
+	font-size: 1rem;
+}
+footer a {
+	color: rgb(253, 228, 217);
+	text-decoration: underline;
+}
+footer a:hover {
+	color:rgb(139, 209, 240);
+}
+
+/*=================================================
+ * Mobile Layout and Styles- 609px width and below
+ * ================================================
+ */
+
+@media only screen and (max-width: 609px) {
+	body {
+		border: 4px solid rgb(204, 31, 222);
+		width: 100%;
+	}
+	nav ul {
+		display: block;
+		margin: 0;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	nav li {
+		display:block;
+		width: 95%;
+	}
+	nav a {
+		display: block;
+		font-size: 1.2rem;
+		text-align: center;
+	}
+	div.banner-imgLeft, div.banner-imgRight {
+		display: block;
+		width: 95%;
+	}
+	div.banner-imgLeft {
+		float:none;
+	}
+	div.banner-textLeft, div.banner-textRight {
+		display: block;
+		width: 95%;
+		height: 100%;
+	}
+	div.banner-textLeft {
+		float:none;
+	}
+	h2 {
+		padding: 8px;
+	}
+	section p {
+		font-size: 1rem;
+	}
+	section#members h2:first-child, section#members h2.memberName:nth-of-type(even), section#members h2.memberName:nth-of-type(odd), h2.eventYear {
+		width: 95%;
+		margin-left: auto;
+		margin-right: auto;
+		float:none;
+		clear:both;
+	}
+	section#members figure:nth-of-type(odd), section#members figure:nth-of-type(even) {
+		width: 50%;
+		min-width: 198px;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		float:none;
+	}
+	thead {
+		display: none;
+	}
+	td::before {
+    content: attr(data-label);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px;
+    width: 40%;
+	text-align: center;
+	}
+	tbody td {
+		position: relative;
+		padding-left: 40%;
+	}
+	table, tbody, tr, td, th {
+		display: block;
+		padding: 0px;
+	}
+	table {
+		border:none;
+		width: 95%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	tr:nth-child(odd) {
+		background-color: rgba(138, 209, 240, 0.67);
+	}
+	td {
+		padding: 5px;
+	}
+	tr {
+		border: none;
+	}
+	input#subject, label {
+		display: block;
+		width:90%;
+		margin:5px 5px 5px 0px;
+	}
+	input {
+		width:60%;
+	}
+	textarea {
+		width:90%;
+		height:100px;
+	}
+	input[type='submit'] {
+		width:50%;
+	}
+	footer {
+		width: 95%;
+	}
+}
+
+/*=====================================================
+ *Tablet Styles and Layout - between 610 and 768 width
+ *=====================================================
+ */
+@media only screen and (min-width: 610px) and (max-width:768px) {
+	h2 {
+		font-size: 1.5rem;
+	}
+	section p, footer p {
+		font-size: 1.1rem;
+	}
+}
+
+/*================================================
+ *Desktop Styles and Layout - 769 width and above
+ *================================================
+ */
+
+@media only screen and (min-width: 769px) {
+	body {
+		width: 83%;
+	}
+	nav a {
+		font-size: 1.3rem;
+	}
+	h1 {
+		font-size: 2.5rem;
+	}
+	h2 {
+		font-size: 1.6rem;
+	}
+	section p, footer p {
+		font-size: 1.15rem;
+	}
+}

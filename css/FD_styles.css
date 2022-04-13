@@ -1,0 +1,210 @@
+@charset "utf-8";
+@font-face {
+	font-family: Lato;
+	src: url(../resources/Lato-Regular.ttf) format('truetype');
+}
+
+/*
+	Feverdream Collective Styles Stylesheet
+
+	Author: Lisa Guevara
+	Date: 2021-03-25
+	
+	Filename: FD_styles.css
+
+	These style elements can also be found in the
+	consolidated stylesheet: GuevaraLisa_styles.css
+*/
+/*=================================================
+ * General Layout and Styles for all screen widths
+ *=================================================
+ */
+html {
+	font-size: 16px;
+	background-color: rgb(64, 64, 64);
+}
+body {
+	background-color: rgb(253, 228, 217);
+	color: black;
+	box-shadow: 35px 0px 65px rgb(204 31 222), -35px 0px 65px rgb(204 31 222);
+}
+nav#links a {
+	background-color: rgb(253, 228, 217);
+	color: rgb(16, 122, 38);
+	text-decoration: underline;
+	font-size: 1rem;
+	text-align: center;
+}
+nav li {
+	background-color: rgb(16, 122, 38);
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	text-align: center;
+}
+nav a {
+	color: rgb(253, 228, 217);
+	font-family: Lato;
+	font-size: 1.2rem;
+	text-decoration: none;
+}
+nav li:hover {
+	background-color:rgba(16, 122, 38, 0.7);
+}
+nav a:hover {
+	color:rgb(253, 228, 217);
+}
+div.banner-imgLeft {
+	background: rgb(139, 209, 240) url(../images/FD-2018_6.jpg) top center/cover no-repeat scroll;
+}
+div.past {
+	background: rgb(139, 209, 240) url(../images/FD-2017_1.jpg) top center/cover no-repeat scroll;
+}
+div.about {
+	background: rgb(139, 209, 240) url(../images/FD-2019_1.jpg) top center/cover no-repeat scroll;
+}
+div.upcoming {
+	background: rgb(139, 209, 240) url(../images/FD-2018_2.jpg) top center/cover no-repeat scroll;
+}
+div.contact {
+	background: rgb(139, 209, 240) url(../images/FD-2019_6.jpg) top center/cover no-repeat scroll;
+}
+div.banner-imgRight {
+	background: rgb(139, 209, 240) url(../images/FD-2018_1.jpg) top center/cover no-repeat scroll;
+}
+div.banner-textLeft, div.banner-textRight {
+	background-color: rgb(138, 209, 240);
+	color: black;
+	text-align: center;
+}
+h1 {
+	text-align: center;
+	font-size: 2.1rem;
+	font-family: Georgia;
+	color: rgb(64, 64, 64);
+}
+h2 {
+	font-family: Lato;
+	font-size: 1.4rem;
+}
+section p {
+	font-family: Georgia;
+	font-size: 1rem;
+}
+section#members h2:first-child, h2.eventYear {
+	background-color: rgb(16, 122, 38);
+	color: rgb(253, 228, 217);
+	text-align: center;
+}
+section#members li {
+    font-size: 1.3rem;
+}
+section#members img {
+	border: 10px solid rgb(138, 209, 240);
+}
+section#members h2.memberName:nth-of-type(even) {
+    text-align: center;
+    background-color: rgb(138, 209, 240);
+}
+section#members h2.memberName:nth-of-type(odd) {
+    text-align: center;
+    background-color: rgb(138, 209, 240);
+}
+aside {
+	background-color: rgb(138, 209, 240);
+}
+ul#pastList li {
+	font-size: 1.3rem;
+}
+a {
+	color: rgb(16, 122, 38);
+	text-decoration: underline;
+}
+a:hover, nav#links a:hover {
+	color: rgb(204, 31, 222);
+}
+table {
+	border: 2px solid rgb(138, 209, 240);
+}
+thead {
+	line-height: 30px;
+	background-color: rgb(138, 209, 240);
+}
+colgroup {
+	border: 1px solid black;
+}
+col#lesson {
+	background-color: rgba(138, 209, 240, 0.6);
+}
+td, tr, th {
+	border: 2px solid rgb(16 122 38);
+}
+input[type='submit'] {
+	font-size: 1rem;
+	background-color: rgb(138, 209, 240);
+}
+footer{
+	background-color: rgb(16, 122, 38);
+	color: rgb(253, 228, 217);
+	text-align: center;
+	font-family: Lato;
+	font-size: 1rem;
+}
+footer a {
+	color: rgb(253, 228, 217);
+	text-decoration: underline;
+}
+footer a:hover {
+	color:rgb(139, 209, 240);
+}
+
+/*=================================================
+ * Mobile Layout and Styles- 609px width and below
+ * ================================================
+ */
+
+@media only screen and (max-width: 609px) {
+	nav a {
+		font-size: 1.2rem;
+		text-align: center;
+	}
+	section p {
+		font-size: 1rem;
+	}
+	tr:nth-child(odd) {
+		background-color: rgba(138, 209, 240, 0.67);
+	}
+}
+
+/*=====================================================
+ *Tablet Styles and Layout - between 610 and 768 width
+ *=====================================================
+ */
+@media only screen and (min-width: 610px) and (max-width:768px) {
+	h2 {
+		font-size: 1.5rem;
+	}
+	section p, nav#links a, footer p {
+		font-size: 1.1rem;
+	}
+}
+
+/*================================================
+ *Desktop Styles and Layout - 769 width and above
+ *================================================
+ */
+
+@media only screen and (min-width: 769px) {
+	nav a {
+		font-size: 1.3rem;
+	}
+	h1 {
+		font-size: 2.5rem;
+	}
+	h2 {
+		font-size: 1.6rem;
+	}
+	section p, nav#links a, footer p {
+		font-size: 1.15rem;
+	}
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+
+<!--
+	Feverdream Collective Contact Us Page
+
+	Author: Lisa Guevara
+	Date: 2021-03-25
+	
+	Filename: FD_contact.html
+-->
+
+<html>
+<head>
+	<title>Contact Us - Feverdream Collective</title>
+	<meta charset="utf-8" />
+	<meta name="keywords" content="art, Feverdream, Fever Dream, performance, contact, artist" />
+	<!--The FD_reset, FD_layout, and FD_styles CSS sheets contain the same code
+	as GuevaraLisa_styles; the code is simply separated by layout, style, and reset codes
+	within these files. For this reason, the separated versions will remain commented
+	for the sake of ease and consistency across the website.-->
+	<!--<link href="../css/FD_reset.css" rel="stylesheet" />
+	<link href="../css/FD_layout.css" rel="stylesheet" />
+	<link href="../css/FD_styles.css" rel="stylesheet" />-->
+	<link href="../css/GuevaraLisa_styles.css" rel="stylesheet" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+	<header>
+		<h1>Feverdream Collective</h1>
+		<nav>
+			<ul>
+				<li><a href="FD_index.html">Home</a></li>
+				<li><a href="FD_about.html">About Us</a></li>
+				<li><a href="FD_past.html">Past</a></li>
+				<li><a href="FD_upcoming.html">Upcoming</a></li>
+				<li><a href="FD_contact.html">Contact Us</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="banner-imgLeft contact">
+	</div>
+	<div class="banner-textRight">
+		<h2 id="upcoming">Contact Us</h2>
+	</div>
+	<section>
+		<p>Questions? Reach out to us!</p>
+		<form id="contact">
+			<label for="fname">First Name</label>
+			<input name="firstName" id="fname" type="text" placeholder="First Name" required/>
+			<label for="lname">Last Name</label>
+			<input name="lastName" id="lname" type="text" placeholder="Last Name" required/>
+			<label for="email">Email Address</label>
+			<input name="userEmail" id="email" type="email" placeholder="your@email.com" required/>
+			<label for="subject">Subject</label>
+			<input name="emailSubject" id="subject" type="text" placeholder="Here's my subject..." required/>
+			<label for="body">Tell us your questions or comments:</label>
+			<textarea name="question" id="body" placeholder="Here's my question..." required></textarea>
+			<input value="Submit" type="submit" />
+		</form>
+	</section>
+	<footer>
+		<p>Founded in Nebraska, but found all over the US.</p>
+	</footer>
+</body>
+</html>

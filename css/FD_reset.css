@@ -1,0 +1,24 @@
+@charset utf-8;
+
+/*
+	Feverdream Collective Reset Stylesheet
+
+	Author: Lisa Guevara
+	Date: 2021-03-25
+	
+	Filename: FD_reset.css
+*/
+
+/*===============
+ * Reset Styles
+ * ==============
+ */
+
+html, body, h1, h2, h3, p, section, a, header, footer, nav, div,
+ul, ol, li, em {
+	padding: 0px;
+	margin: 0px;
+	text-decoration: none;
+	box-sizing: border-box;
+	list-style-type: none;
+}
